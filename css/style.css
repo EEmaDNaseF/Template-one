@@ -1,0 +1,413 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --primary-color : #42F0DE ;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Start Style Header */
+.header {
+    background-color: white;
+    
+}
+
+.container {
+    padding: 15px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  transparent;
+}
+.container .logo {
+    width: 65px;
+}
+
+.container .links ul {
+    display: flex;
+}
+
+.container .links ul li {
+    list-style-type: none;
+
+}
+.container .links ul li a {
+    text-decoration: none;
+    margin-right: 35px;
+    color: #333;
+    display: block;
+    transition: all 0.5s;
+    font-weight: bold;
+}
+/* End Style Header */
+
+/* ٍStart Style Landing */
+.landing {
+    background-image: url(../images/landing.jpg);
+    background-position: center center;
+    background-size: cover;
+    min-height: calc(100vh - 56px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landing .content {
+    text-align: center;
+}
+.landing .content h1 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 50px;
+}
+.landing .content p {
+    width: 300px;
+    font-size: 19px;
+    line-height: 34px;
+    max-width: 100%;
+
+}
+/* End Style Landing */
+
+
+
+
+/* Start Style Features  */
+.features {
+    padding: 25px;
+    background-color: #eee;
+}
+
+.features .features-container {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill ,minmax(300px,1fr));
+    gap: 10px;
+    text-align: center;
+}
+.features .features-container .card {
+    padding: 25px;
+}
+.features .features-container .card i,
+.features .features-container .card h3 {
+    margin-bottom: 20px;
+}
+.features .features-container .card i {
+    color: var(--primary-color);
+} 
+
+/* End Style Features  */
+
+
+/* Start Style Servecis */
+.servecis {
+    padding: 25px;
+}
+.servecis .servecis-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 80%;
+    margin: auto;
+    grid-gap: 30px;
+}
+
+
+.servecis .servecis-p {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.servecis .servecis-p h1 {
+    font-size: 100px;
+    color: #dcd9d4;
+    letter-spacing: -4px;
+}
+
+.servecis .servecis-p p {
+    font-size: 19px;
+    color: #9c9386;
+    font-weight: 400;
+    margin: -30px 0 0;
+}
+
+.servecis .servecis-container .srv  {
+    margin-bottom: 30px;
+    padding: 20px;
+    display: flex;
+}
+.servecis .servecis-container .srv h3 {
+    color: tan;
+    margin-left: 15px;
+    margin-bottom: 25px;
+}
+.servecis .servecis-container .srv p {
+    line-height: 24px;
+    margin-left: 15px;
+
+}
+
+
+
+
+/* End Style Servecis */
+
+
+/* Start Style Portofolio */
+.portofolio {
+    padding: 25px;
+    background-color: #eee;
+}
+.portofolio .portofolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px,1fr));
+    width: 80%;
+    margin: auto;
+    grid-gap: 30px;
+} 
+.portofolio .portofolio-container .card img {
+    width: 100%;
+}
+.portofolio .portofolio-container .card {
+    background-color: white;
+}
+.portofolio .portofolio-container .card .content-card {
+    padding: 20px;
+}
+.portofolio .portofolio-container .card .content-card h3{
+    margin-bottom: 15px;
+    font-size: 19px;
+    color: #e8e6e3;
+}
+.portofolio .portofolio-container .card .content-card p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #9d9488;
+}
+.portofolio .portofolio-p {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.portofolio .portofolio-p h1 {
+    font-size: 100px;
+    color: #dcd9d4;
+    font-weight: 800;
+    letter-spacing: -4px;
+}
+
+.portofolio .portofolio-p p {
+    font-size: 19px;
+    color: #9c9386;
+    font-weight: 400;
+    margin: -30px 0 0;
+}
+
+
+/* End Style Portofolio */
+
+
+/* Start Style Contact */
+
+.contact {
+    padding: 25px;
+    background-color: white;
+}
+.contact .contact-container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.contact .contact-p {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.contact .contact-p h1 {
+    font-size: 100px;
+    color: #dcd9d4;
+    font-weight: 800;
+    letter-spacing: -4px;
+}
+
+.contact .contact-p p {
+    font-size: 19px;
+    color: #9c9386;
+    font-weight: 400;
+    margin: -30px 0 0;
+}
+.contact .contact-container .info p {
+    font-size: 35px;
+    color: #a2bfcf;
+    margin-bottom: 15px;
+}
+.contact .contact-container .info a {
+    font-size: 35px;
+    color: #42f0de;
+}
+.contact .contact-container .info .link {
+    margin-bottom: 15px;
+
+}
+.contact .contact-container .info .social p {
+    font-size: 16px;
+    color: #e8e6e3;
+    line-height: 18px;
+}
+
+
+
+/* End Style Contact */
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .servecis .servecis-container .image-column img {
+        display: none;
+    }
+    .servecis .servecis-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 675px) {
+    .header {
+        background-color: tomato;
+    }
+    .container .links .icon {
+        width: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        
+    }
+
+    .container .links .icon span:nth-child(1) {
+        width: 100%;
+        height: 2px;
+        background-color: #333;
+        margin-bottom: 5px;
+    }
+    .container .links .icon span:nth-child(2) {
+        width: 60%;
+        height: 2px;
+        background-color: #333;
+        margin-bottom: 5px;
+        transition: all 0.5s;
+    }
+    .container .links .icon span:nth-child(3) {
+        width: 100%;
+        height: 2px;
+        background-color: #333;
+    }
+
+    .container .links {
+        position: relative;
+    }
+
+    .container .links ul {
+        display: none;
+        position: absolute; 
+        right: 0;
+        width: 200px;
+        background-color: #ddd;
+        top: calc(100% + 15px); 
+
+    }
+    .container .links .icon:hover span:nth-child(2) {
+        width: 100%;
+    }  
+    .container .links ul::after {
+        content: "";
+        top: -26px;
+        right: 0;
+        position: absolute;
+        border-width: 13px;
+        border-style: solid;
+        border-color:  transparent  transparent #333 transparent;
+    } 
+    .container .links ul li a {
+        padding: 15px; 
+        margin-right: 0;
+    } 
+    .container .links ul li:not(:last-child) a {
+        border-bottom: 2px solid #333;
+    }  
+    .container .links ul li a:hover {
+        padding-left: 25px;
+    } 
+    .container .links:hover ul{
+        display: block; 
+    }
+
+
+} 
+
+
+@media only screen and (max-width: 440px) {
+    .landing .content h1 {
+        font-size: 25px;
+        margin-bottom: 8px;
+    }
+    .landing .content p {
+        font-size: 17px;
+        line-height: 25px;
+    }
+    .features .features-container,
+    .servecis .servecis-container,
+    .portofolio .portofolio-container  {
+        grid-template-columns: 1fr;
+    }
+    .servecis .servecis-container .image-column img {
+        display: none;
+    }
+    .servecis .servecis-p h1,
+    .portofolio .portofolio-p h1{
+        font-size: 40px;
+        margin-bottom: 35px;
+    }
+    .portofolio .portofolio-p p {
+        font-size: 16px;
+    }
+    .contact .contact-container .info p {
+        font-size: 20px;
+    }
+    .contact .contact-p {
+        margin-bottom: 10px;
+    }
+        .contact .contact-p h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+    .contact .contact-container .info a {
+        font-size: 24px;
+    }
+}    
+
+
+
+@media only screen and (max-width: 330px) {
+        .contact .contact-container .info a {
+        font-size: 16px;
+    }
+}
+
+
+
+
